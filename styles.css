@@ -51,7 +51,7 @@ img {
 /* HERO SECTION */
 
 #heroSection {
-    background-image: url("images/madoria.jpg");
+    background-image: url("Images/madoria.jpg");
     background-size: cover;
     height: 343px;
     display: flex;
@@ -151,15 +151,15 @@ img {
 }
 
 #imgPinkValley, #popupPinkValley {
-    background-image: url("images/pinkValley.jpg");
+    background-image: url("Images/pinkValley.jpg");
 }
 
 #imgMushroomWoodlands, #popupMushroomWoodlands {
-    background-image: url("images/mushroomWoodlands.jpg");
+    background-image: url("Images/mushroomWoodlands.jpg");
 }
 
 #imgDarkCity, #popupDarkCityImg{
-    background-image: url("images/darkCity.jpg");
+    background-image: url("Images/darkCity.jpg");
 }
 
 #pinkValley h4, #mushroomWoodlands h4, #darkCity h4 {
@@ -260,15 +260,15 @@ img {
   }
 
 #imgDesert {
-    background-image: url("images/desertSecrets.jpg");
+    background-image: url("Images/desertSecrets.jpg");
 }
 
 #imgWasteland {
-    background-image: url("images/hecticWastelands.jpg");
+    background-image: url("Images/hecticWastelands.jpg");
 }
 
 #imgKingdom {
-    background-image: url("images/peacefulKingdom.jpg");
+    background-image: url("Images/peacefulKingdom.jpg");
 }
 
 #journeySection img{
