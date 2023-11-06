@@ -1,0 +1,322 @@
+/**
+Cream: #fffcf2
+LightGrey: #e6ebe0  |  #ccc5b9
+DarkGrey: #403d39
+Turquise: #9bc1bc
+Text: #252422
+Yellow: #e9c46a
+Bright: #ed6a5a
+*/
+
+@font-face {
+    src: url("font/BerkshireSwash-Regular.ttf");
+    font-family: madoriaFont
+}
+
+@font-face {
+    src: url("font/Poppins-Regular.ttf");
+    font-family: bodyFont
+}
+
+body {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 720px;
+    background: #fffcf2;
+    font-family: bodyFont;
+    line-height: 1.5em;
+    color: #252422;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        max-width: 100%;
+    }
+  }
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.sub-heading {
+    margin: 30px 0px 20px 0px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    border-bottom: solid 1px #252422;
+}
+
+/* HERO SECTION */
+
+#heroSection {
+    background-image: url("images/madoria.jpg");
+    background-size: cover;
+    height: 343px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 0px 100px;
+}
+
+@media screen and (max-width: 500px) {
+  #heroSection {
+    padding: 0px 10px;
+  }
+}
+
+#heroSection h1 {
+    font-family: madoriaFont;
+    font-size: 4em;
+    line-height: 1.2em;
+    margin-bottom: 0;
+    text-shadow: 0 0 5px #fffcf2;
+}
+
+#heroSection h2 {
+    font-size: 1.2em;
+    background: rgba(255, 252, 242, 0.5);
+    box-shadow: 0 0 50px #fffcf2;
+    padding: 5px 30px;
+    border-radius: 50px;
+    overflow: auto;
+}
+
+@media screen and (max-width: 500px) {
+  #heroSection h2 {
+    font-size: 1em;
+  }
+}
+
+/* ACTIVITY SECTION */
+
+#activitySection {
+    background: #e6ebe0;
+    padding: 20px 50px;
+    margin: 0px;
+}
+
+#destinations, #journeyImages {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: top;
+    margin: 40px 0px;
+}
+
+@media screen and (max-width: 600px) {
+    #destinations, #journeyImages {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+  }
+
+#pinkValley, #mushroomWoodlands, #darkCity {
+    background: #9bc1bc;
+    margin: 0px 5px;
+    border-radius: 30px;
+    padding: 20px 30px;
+}
+
+@media screen and (max-width: 600px) {
+    #pinkValley, #mushroomWoodlands, #darkCity {
+        margin: 8px;
+        width: 300px;
+    }
+  }
+
+.imgDestinations {
+    border: solid 3px #fffcf2;
+    border-radius: 50%;
+    box-shadow: 2px 2px 10px #252422;
+    background-size: cover;
+    background-position: center; 
+    height: 150px;
+    width: 150px;  
+    transition: all 1s ease-in-out;
+}
+
+@media screen and (max-width: 600px) {
+    .imgDestinations {
+        margin: auto;
+    }
+  }
+
+.imgDestinations:hover {
+    width: 180px;
+    height: 180px;
+    transform: rotate(360deg);
+}
+
+#imgPinkValley, #popupPinkValley {
+    background-image: url("images/pinkValley.jpg");
+}
+
+#imgMushroomWoodlands, #popupMushroomWoodlands {
+    background-image: url("images/mushroomWoodlands.jpg");
+}
+
+#imgDarkCity, #popupDarkCityImg{
+    background-image: url("images/darkCity.jpg");
+}
+
+#pinkValley h4, #mushroomWoodlands h4, #darkCity h4 {
+    font-size: 1.2em;
+    padding-bottom: 10px;
+    border-bottom: solid 1px #252422;
+}
+
+
+
+/* POPUP */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fffcf2;
+    border-radius: 5px;
+    max-width: 500px;
+    position: relative;
+    transition: all 5s ease-in-out;
+    max-height: 80%;
+    overflow: auto;
+}
+
+@media screen and (max-width: 600px) {
+    .popup {
+        max-width: 400px;
+    }
+  }
+
+.popup .close {
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #252422;
+}
+
+.popup .close:hover {
+    color: #9bc1bc;
+}
+
+.popup h4 {
+    margin-top: 0; 
+}
+
+.popupImg {
+    height: 500px;
+    background-size: cover;
+    background-position: center; 
+}
+
+/* JOURNEY */
+
+#journeySection {
+    background: #fffcf2;
+    border-left: solid 2px #e6ebe0;
+    border-right: solid 2px #e6ebe0;
+    padding: 20px 50px;
+    margin: 0px;
+}
+
+.imgJourney {
+    border: solid 3px #fffcf2;
+    border-radius: 50%;
+    box-shadow: 2px 2px 10px #252422;
+    background-size: cover;
+    background-position: center; 
+    height: 150px;
+    width: 150px;
+    margin: 8px;
+}
+
+@media screen and (max-width: 600px) {
+    .imgJourney {
+        border-radius: 0px;
+        width: 400px;
+        height: 200px;
+        margin: 8px;
+    }
+  }
+
+#imgDesert {
+    background-image: url("images/desertSecrets.jpg");
+}
+
+#imgWasteland {
+    background-image: url("images/hecticWastelands.jpg");
+}
+
+#imgKingdom {
+    background-image: url("images/peacefulKingdom.jpg");
+}
+
+#journeySection img{
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    margin-top: 20px;
+    border: solid 3px #fffcf2;
+    box-shadow: 2px 2px 10px #252422; 
+}
+
+/* GUIDE SECTION */
+
+#guideSection {
+    background: #e6ebe0;
+    padding: 20px 50px;
+    margin: 0px; 
+    text-align: left; 
+}
+
+@media screen and (max-width: 600px) {
+    #guideSection {
+        text-align: center;
+    }
+  }
+
+#guideSection h3 {
+    text-align: center;
+}
+
+#navInfo {
+    display: flex;
+    justify-content: center;
+}
+
+#navInfo p {
+    margin: 20px 50px 0px 0px;
+}
+
+@media screen and (max-width: 600px) {
+    #navInfo, #navInfo p {
+        flex-direction: column;
+        align-items: center;
+        margin: 0px 0px 10px 0px;
+    }
+  }
+
+.guideName {
+    font-weight: 600;
+    font-size: 0.9em;
+}
