@@ -28,7 +28,7 @@ body {
     color: #252422;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     body {
         max-width: 100%;
     }
@@ -105,7 +105,7 @@ img {
     margin: 40px 0px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     #destinations, #journeyImages {
         flex-direction: column;
         justify-content: space-around;
@@ -120,7 +120,7 @@ img {
     padding: 20px 30px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     #pinkValley, #mushroomWoodlands, #darkCity {
         margin: 8px;
         width: 300px;
@@ -138,7 +138,7 @@ img {
     transition: all 1s ease-in-out;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .imgDestinations {
         margin: auto;
     }
@@ -201,7 +201,7 @@ img {
     overflow: auto;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .popup {
         max-width: 400px;
     }
@@ -250,7 +250,7 @@ img {
     margin: 8px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .imgJourney {
         border-radius: 0px;
         width: 400px;
@@ -289,7 +289,7 @@ img {
     text-align: left; 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     #guideSection {
         text-align: center;
     }
@@ -308,7 +308,7 @@ img {
     margin: 20px 50px 0px 0px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     #navInfo, #navInfo p {
         flex-direction: column;
         align-items: center;
